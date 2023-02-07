@@ -1,19 +1,16 @@
 {
-  "name": "isw713ws",
+  "name": "workshop01",
   "version": "1.0.0",
-  "description": "Primer workshop del curso ISW713",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yasnielarod/ISW713WS.git"
-  },
-  "author": "yasnielarod",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yasnielarod/ISW713WS/issues"
-  },
-  "homepage": "https://github.com/yasnielarod/ISW713WS#readme"
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
 }
