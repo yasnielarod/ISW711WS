@@ -1,0 +1,71 @@
+Usando el codigo de ejemplo hecho en clase realice las siguientes consultas:
+
+1. Listar los equipos existentes en la base de datos
+
+2. Filtrar los equipos por nombre y ordenados alfabéticamente
+
+3. Modificar la consulta de jugadores de manera que se pueda enviar un parametro que permita ordenar por nombre "ASC" o "DESC" 
+
+----------
+Consulta 1:
+query{
+  players {
+    first_name,
+    age
+  }
+}
+Consulta 2:
+query{
+  player(id: "63ecec5d6deb415be30b189d"){
+    first_name
+  }
+}
+consulta 3:
+query{
+  playerByName(name:"Marcelo" limit: 5){
+    _id,
+    first_name,
+    last_name,
+    age
+  }
+}
+consulta 4:
+query{
+  teams {
+    name
+  }
+}
+----------------
+Consultas Workshop
+1#
+query{
+  teams {
+    name,
+    description
+  }
+}
+2#
+query{
+  teamsOrder {
+    name
+  } 
+}
+3#
+//asc
+query{
+  playerOrder(order: "asc") {
+    _id
+    first_name
+    last_name
+    age
+  } 
+}
+//desc
+query{
+  playerOrder(order: "desc") {
+    _id
+    first_name
+    last_name
+    age
+  } 
+}

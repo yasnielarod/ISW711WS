@@ -1,0 +1,19 @@
+{
+  "name": "workshop03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.5.0",
+    "graphql": "^16.6.0",
+    "moongose": "^1.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
